@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel&family=Libre+Baskerville&family=Noto+Serif+Telugu:wght@500&family=Pacifico&family=Qwitcher+Grypen&family=Raleway:wght@100&family=Rubik+Iso&family=Silkscreen&family=Tiro+Telugu&family=Tulpen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel&family=Libre+Baskerville&family=Noto+Serif+Telugu:wght@500&family=Pacifico&family=Preahvihear&family=Qwitcher+Grypen&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik+Iso&family=Silkscreen&family=Tiro+Telugu&family=Titillium+Web:wght@200&family=Tulpen+One&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="container">
+        <h1 id="movi">Guess The Movie Name</h1>
+        <div id="playerNameForm">
+           <form>
+            <label for="fname">Player name:</label>
+            <input type="text" id="p1name" class="input-form" placeholder="username"><br>
+           </form> 
+           <button id="btn1">Play</button>
+        </div>
+        <div class="dialogue-box" id="user_inp">
+            <h2 id="turns">player1 turn</h2>
+            <div class="input-div">
+                <h2 id="question">question</h2>
+                <input type="text" class="input_ans" placeholder="insert text here"  id="input-answer" autofocus>
+                <button id="ans_btn" class="ans_bt">Enter</button>                
+            </div>
+        </div>
+        <div class="decision">
+            <button class="guess">Guess again</button>
+            <button class="esc">Quit</button>
+        </div>
+        <div id="end">
+            <h1 id="greeting">Thanks for playing !!</h1>
+            <a href="./index.html" type="button" id="play_again">play again</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
